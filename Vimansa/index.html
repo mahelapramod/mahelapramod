@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vimansa Semini Gamaethige | Portfolio &amp; CV</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f294a;
+      color: #ffffff;
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header .brand {
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.4px;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 0.92rem;
+    }
+
+    nav a:hover {
+      color: #93c5fd;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 28px auto;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 6px 20px rgba(15, 41, 74, 0.06);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 36px 24px;
+    }
+
+    .profile-pic {
+      width: 155px;
+      height: 155px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 50%;
+      border: 4px solid #0f294a;
+      box-shadow: 0 8px 22px rgba(15, 41, 74, 0.16);
+      margin-bottom: 16px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e0ecff;
+      color: #0f294a;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      letter-spacing: 0.6px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #0f294a;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: #475569;
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+
+    .quote {
+      max-width: 680px;
+      margin: 0 auto 22px;
+      color: #334155;
+      font-style: italic;
+      background: #f8fafc;
+      border-left: 4px solid #1d4ed8;
+      padding: 14px 18px;
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0f294a;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 11px 22px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      color: #0f294a;
+      margin-bottom: 14px;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    .info-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .info-box h3 {
+      font-size: 1rem;
+      color: #0f294a;
+      margin-bottom: 6px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .edu-item {
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px dashed #cbd5e1;
+    }
+
+    .edu-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .skill-tag {
+      background: #eef2ff;
+      color: #1e3a8a;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .contact-item {
+      margin-bottom: 10px;
+      font-size: 0.98rem;
+    }
+
+    .contact-item a {
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      color: #64748b;
+      font-size: 0.88rem;
+      padding: 20px 16px 36px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">Vimansa Semini Gamaethige</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section class="card hero">
+      <img src="profile.jpg" alt="Vimansa Semini Gamaethige" class="profile-pic" />
+      <div class="badge">ACCOUNTING &amp; FINANCE PORTFOLIO</div>
+      <h1>Vimansa Semini Gamaethige</h1>
+      <div class="subtitle">Accounting &amp; Finance Undergraduate | Aspiring Audit &amp; Finance Professional</div>
+      <div class="quote">
+        "An enthusiastic Accounting and Finance undergraduate with hands-on audit experience, currently pursuing a BSc in Applied Accounting and CA Sri Lanka (Business Level). Passionate about financial reporting, auditing, and continuous professional growth."
+      </div>
+      <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>
+        I am a dedicated Accounting and Finance undergraduate at SAB Campus with a strong academic foundation in commerce and one year of practical experience in an audit firm. Through my studies and hands-on exposure to auditing and financial operations, I have developed strong analytical, teamwork, and attention-to-detail skills. I am eager to contribute to a dynamic finance or audit team while advancing my professional qualifications.
+      </p>
+      <div class="grid-2">
+        <div class="info-box">
+          <h3>Date of Birth</h3>
+          <p>2004 / 08 / 28</p>
+        </div>
+        <div class="info-box">
+          <h3>Career Focus</h3>
+          <p>Accounting, Auditing &amp; Finance</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Practical Experience</h2>
+      <div class="edu-item">
+        <h3>Audit Trainee / Associate (1 Year Practical Experience)</h3>
+        <p><strong>Audit Firm</strong></p>
+        <ul>
+          <li>Assisted in statutory audits, vouching, and verification of financial records.</li>
+          <li>Prepared audit working papers and supported senior auditors with client documentation.</li>
+          <li>Gained practical exposure to accounting standards, compliance, and financial reporting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+
+      <div class="edu-item">
+        <h3>BSc in Applied Accounting (Reading)</h3>
+        <p>SAB Campus</p>
+      </div>
+
+      <div class="edu-item">
+        <h3>Chartered Accountancy – Business Level (Reading)</h3>
+        <p>CA Sri Lanka</p>
+      </div>
+
+      <div class="edu-item">
+        <h3>G.C.E. Advanced Level (Commerce Stream)</h3>
+        <ul>
+          <li>Accounting – <strong>A</strong></li>
+          <li>Business Studies – <strong>A</strong></li>
+          <li>Economics – <strong>B</strong></li>
+        </ul>
+      </div>
+
+      <div class="edu-item">
+        <h3>G.C.E. Ordinary Level</h3>
+        <ul>
+          <li><strong>8 A's:</strong> Sinhala (A), Mathematics (A), Science (A), History (A), Commerce (A), Buddhism (A), Health (A), Music (A)</li>
+          <li><strong>1 C:</strong> English (C)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Core Skills</h2>
+      <div class="skills-list">
+        <span class="skill-tag">Financial Accounting</span>
+        <span class="skill-tag">Auditing &amp; Assurance</span>
+        <span class="skill-tag">Finance &amp; Reporting</span>
+        <span class="skill-tag">Attention to Detail</span>
+        <span class="skill-tag">Teamwork &amp; Communication</span>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <div class="contact-item">
+        <strong>Email:</strong> <a href="mailto:Vgamaethige@gmail.com">Vgamaethige@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <strong>Phone / WhatsApp:</strong> <a href="tel:0707172577">0707172577</a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2026 Vimansa Semini Gamaethige. All rights reserved.
+  </footer>
+
+</body>
+</html>
